@@ -82,7 +82,7 @@ export class RPCSubprovider extends Subprovider {
         }
 
         if (data.error) {
-            end(data.error);
+            end(new Error(data.error.message));
             return;
         }
         end(null, data.result);
