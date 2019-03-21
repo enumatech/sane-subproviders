@@ -5,6 +5,7 @@ dependencies:
   ethereum-types: 1.0.9
   json-rpc-error: 2.0.0
   lodash: 4.17.11
+  request-promise-native: 1.0.7
 devDependencies:
   '@types/ethereumjs-tx': 1.0.0
   '@types/lodash': 4.14.116
@@ -390,6 +391,38 @@ packages:
     dev: false
     resolution:
       integrity: sha1-FDj5jQRqz3tNeM1QK/QYrGTU8JU=
+  /psl/1.1.31:
+    dev: false
+    resolution:
+      integrity: sha512-/6pt4+C+T+wZUieKR620OpzN/LlnNKuWjy1iFLQ/UG35JqHlR/89MP1d96dUfkf6Dne3TuLQzOYEYshJ+Hx8mw==
+  /punycode/2.1.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+  /request-promise-core/1.1.2:
+    dependencies:
+      lodash: 4.17.11
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    peerDependencies:
+      request: ^2.34
+    resolution:
+      integrity: sha512-UHYyq1MO8GsefGEt7EprS8UrXsm1TxEvFUX1IMTuSLU2Rh7fTIdFtl8xD7JiEYiWU2dl+NYAjCTksTehQUxPag==
+  /request-promise-native/1.0.7:
+    dependencies:
+      request-promise-core: 1.1.2
+      stealthy-require: 1.1.1
+      tough-cookie: 2.5.0
+    dev: false
+    engines:
+      node: '>=0.12.0'
+    peerDependencies:
+      request: ^2.34
+    resolution:
+      integrity: sha512-rIMnbBdgNViL37nZ1b3L/VfPOpSi0TqVDQPAvO6U14lMzOLrt5nilxCQqtDKhZeDiW0/hkCXGoQjhgJd/tCh6w==
   /ripemd160/2.0.2:
     dependencies:
       hash-base: 3.0.4
@@ -445,6 +478,12 @@ packages:
     resolution:
       integrity: sha512-QMEp5B7cftE7APOjk5Y6xgrbWu+WkLVQwk8JNjZ8nKRciZaByEW6MubieAiToS7+dwvrjGhH8jRXz3MVd0AYqQ==
       tarball: 'http://registry.npmjs.org/sha.js/-/sha.js-2.4.11.tgz'
+  /stealthy-require/1.1.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
   /strip-hex-prefix/1.0.0:
     dependencies:
       is-hex-prefixed: 1.0.0
@@ -454,6 +493,15 @@ packages:
       npm: '>=3'
     resolution:
       integrity: sha1-DF8VX+8RUTczd96du1iNoFUA428=
+  /tough-cookie/2.5.0:
+    dependencies:
+      psl: 1.1.31
+      punycode: 2.1.1
+    dev: false
+    engines:
+      node: '>=0.8'
+    resolution:
+      integrity: sha512-nlLsUzgm1kfLXSXfRZMc1KLAugd4hqJHDTvc2hDIwS3mZAfMEuMbc03SujMF+GEcpaX/qboeycw6iO8JwVv2+g==
   /typescript/3.1.1:
     dev: true
     engines:
@@ -489,4 +537,5 @@ specifiers:
   ethereum-types: ^1.0.5
   json-rpc-error: 2.0.0
   lodash: ^4.17.5
+  request-promise-native: ^1.0.7
   typescript: ^3.0.3

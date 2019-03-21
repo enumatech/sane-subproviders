@@ -1,6 +1,6 @@
 {
     "name": "sane-subproviders",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "engines": {
         "node": ">=6.12"
     },
@@ -13,7 +13,8 @@
         "@0xproject/utils": "^1.0.5",
         "ethereum-types": "^1.0.5",
         "json-rpc-error": "2.0.0",
-        "lodash": "^4.17.5"
+        "lodash": "^4.17.5",
+        "request-promise-native": "^1.0.7"
     },
     "devDependencies": {
         "@types/ethereumjs-tx": "^1.0.0",
